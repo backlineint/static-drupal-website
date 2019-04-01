@@ -4,10 +4,10 @@ import { StaticQuery, graphql, Link } from "gatsby"
 export default () => (
   <StaticQuery
     query={graphql`
-      query FeaturedProjectsQuery {
+      query ResourceMenuQuery {
         allMarkdownRemark(
           filter: {
-            fields: {type: {eq: "project"}}
+            fields: {type: {eq: "resource"}}
           }
         ) {
           edges {
@@ -25,7 +25,6 @@ export default () => (
     `}
     render={data => (
       <>
-        <h2>Featured Projects</h2>
         <ul>
           {data.allMarkdownRemark.edges.map(({node}) => (
             <Link

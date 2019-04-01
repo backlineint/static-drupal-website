@@ -21,6 +21,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `slug`,
         value: `/projects${slug}`,
       })
+      createNodeField({
+        node,
+        name: `type`,
+        value: `project`,
+      })
+    }
+    else if (fileNode.sourceInstanceName === 'resources') {
+      // It should be possible to put files in the root of the resources directory, or in a subdirectory.
+      const slug = createFilePath({ node, getNode, basePath: `${fileNode.relativeDirectory}` })
+      createNodeField({
+        node,
+        name: `slug`,
+        value: `/resources${slug}`,
+      })
+      createNodeField({
+        node,
+        name: `type`,
+        value: `resource`,
+      })
     }
   }
 }
@@ -34,6 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             fields {
               slug
+              type
             }
           }
         }
@@ -42,16 +62,29 @@ exports.createPages = ({ graphql, actions }) => {
   `
 ).then(result => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve(`./src/templates/project.js`),
-        context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
-          // See $slug in project template.
-          slug: node.fields.slug,
-        },
-      })
+
+      if (node.fields.type === 'project') {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/project.js`),
+          context: {
+            // Data passed to context is available
+            // in page queries as GraphQL variables.
+            // See $slug in project template.
+            slug: node.fields.slug,
+          },
+        })
+      }
+      else if (node.fields.type === 'resource') {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/resource.js`),
+          context: {
+            slug: node.fields.slug,
+          },
+        })
+      }
+
     })
   })
 }
