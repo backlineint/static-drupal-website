@@ -1,3 +1,18 @@
 body {
   margin: 0;
+  font-family: 'Overpass', Sans-Serif;
+  font-size: 17px;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', Sans-Serif;
+  font-size: 48px;
+}
+
+h2 {
+  color: #0678be;
+}
+
+a {
+  color: #0678be;
 }
