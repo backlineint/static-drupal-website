@@ -10,8 +10,9 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-//import "./layout.css"
-import styles from "./layout.module.css"
+import Constrain from "./Constrain"
+
+import styles from "./layout.module.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,10 +30,13 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className={styles.mainContent}>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <footer className={styles.footer}>
+            <Constrain>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a> and
+              maintained by <a href="http://brianperryinteractive.com">Brian Perry</a>.
+            </Constrain>
           </footer>
         </div>
       </>

@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
-import styles from "./ResourceMenu.module.css"
+import styles from "./ResourceMenu.module.scss"
 
 export default () => (
   <StaticQuery

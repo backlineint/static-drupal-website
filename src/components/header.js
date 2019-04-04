@@ -4,7 +4,7 @@ import React from "react"
 
 import ResourceMenu from "./ResourceMenu"
 
-import styles from "./header.module.css"
+import styles from "./header.module.scss"
 
 const Header = ({ siteTitle }) => (
   <header>

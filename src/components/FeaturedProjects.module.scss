@@ -1,0 +1,29 @@
+.featured-projects {
+  background-color: whitesmoke;
+
+  a {
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-family: 'Source Sans Pro', Sans-Serif;
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+  
+  .featured-project {
+    box-shadow: rgba(25,17,34,0.1) 0px 5px 20px;
+    background-color: white;
+    padding: 4rem;
+    margin: 1rem 0;
+    display: block;
+    text-decoration: none;
+    
+    .title {
+      font-family: 'Overpass', Sans-Serif;
+      font-size: 30px;
+    }
+  }
+
+}

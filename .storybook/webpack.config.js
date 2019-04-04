@@ -21,9 +21,6 @@ module.exports = ({ config }) => {
   config.resolve.mainFields = ["browser", "module", "main"]
 
   // TODO - CSS Module Support
-  // https://github.com/storybooks/storybook/issues/2320
-  // https://github.com/m-allanson/gatsby-storybook-css-modules
-  // Maybe examples from the webpack config here: https://github.com/fabien0102/gatsby-starter/blob/master/.storybook/webpack.config.js
-
+  
   return config
 }

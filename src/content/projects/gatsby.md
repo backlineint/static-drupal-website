@@ -1,5 +1,6 @@
 ---
 title: Gatsby
+description: A framework based on React that helps developers build blazing fast websites and apps
 repository: https://github.com/gatsbyjs/gatsby
 homepage: https://www.gatsbyjs.org/
 ---

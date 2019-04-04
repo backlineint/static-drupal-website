@@ -2,11 +2,18 @@ body {
   margin: 0;
   font-family: 'Overpass', Sans-Serif;
   font-size: 17px;
+  background-color: #064771;
+}
+
+main {
+  background-color: white;
 }
 
 h1 {
   font-family: 'Source Sans Pro', Sans-Serif;
   font-size: 48px;
+  margin: 0;
+  padding-top: 2rem;
 }
 
 h2 {

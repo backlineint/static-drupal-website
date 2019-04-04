@@ -1,5 +1,6 @@
 ---
 title: Jekyll
+description: Simple, blog-aware, static sites
 repository: https://github.com/jekyll/jekyll
 homepage: https://jekyllrb.com/
 ---
