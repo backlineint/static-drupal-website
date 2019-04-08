@@ -3,8 +3,10 @@
 }
 .list {
   padding: 0;
+  float: right;
   a {
     color: white;
+    text-decoration: none;
   }
 }
 .list li {

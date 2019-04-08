@@ -1,8 +1,15 @@
 .footer {
-  background: #0678be;
+  //background: #0678be;
+  background-color: #064771;
   color: white;
   padding-top: 1.5rem;
   a {
     color: white;
+  }
+}
+
+.fixed {
+  svg {
+    position: fixed !important;
   }
 }

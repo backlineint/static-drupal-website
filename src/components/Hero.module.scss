@@ -1,12 +1,25 @@
 .hero {
   background-color: #064771;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 4rem;
+  }
+
   h1,
   h2, 
   p {
     color: white;
   }
+  
   h1 {
     margin: 0;
     padding-top: 2rem;
+  }
+  
+  .icons {
+    font-size: 8rem;
+    color: white;
   }
 }

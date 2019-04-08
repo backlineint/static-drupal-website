@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import GithubCorner from 'react-github-corner';
 
 import Header from "./header"
 import Constrain from "./Constrain"
@@ -38,6 +39,7 @@ const Layout = ({ children }) => (
               maintained by <a href="http://brianperryinteractive.com">Brian Perry</a>.
             </Constrain>
           </footer>
+          <GithubCorner octoColor="#0678be" bannerColor="whitesmoke" className={styles.fixed} href="https://github.com/backlineint/static-drupal-website" />
         </div>
       </>
     )}

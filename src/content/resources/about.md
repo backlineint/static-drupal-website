@@ -2,4 +2,4 @@
 title: About
 ---
 
-About the website
+Do we really need an about link? Can the homepage just handle it?

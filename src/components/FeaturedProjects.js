@@ -19,6 +19,7 @@ export default () => (
               frontmatter {
                 title
                 description
+                language
               }
               fields {
                 slug
@@ -32,16 +33,30 @@ export default () => (
       <div className={styles.featuredProjects}>
         <Constrain>
           <h2>Featured Projects</h2>
+          <div className={styles.grid}>
             {data.allMarkdownRemark.edges.map(({node}) => (
               <Link
                 to={node.fields.slug}
               >
                 <div className={styles.featuredProject}>
+                    <div className={styles.language}>{node.frontmatter.language}</div>
                     <div className={styles.title}>{node.frontmatter.title}</div>
-                    {node.frontmatter.description}
+                    <div className={styles.description}>{node.frontmatter.description}</div>
+                    <p>More info ></p>
                 </div>
               </Link>
             ))}
+            <Link to="resources/contributing">
+              <div className={styles.featuredProject}>
+                Add new
+              </div>
+            </Link>
+            <Link to="resources/contributing">
+              <div className={styles.featuredProject}>
+                View All
+              </div>
+            </Link>
+          </div>
           </Constrain>
       </div>
     )}
