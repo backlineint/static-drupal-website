@@ -31,7 +31,8 @@ export default () => (
           {data.allMarkdownRemark.edges.map(({node}) => (
             <Link
               to={node.fields.slug}
-              class={styles.link}
+              className={styles.link}
+              key={node.fields.slug}
             >
               <li>{node.frontmatter.title}</li>
             </Link>

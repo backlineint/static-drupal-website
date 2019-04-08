@@ -3,6 +3,7 @@ title: Tome
 description: A static site generator for Drupal 8 A static site generator for Drupal 8A static site generator for Drupal 8
 repository: https://www.drupal.org/project/tome
 homepage: https://tome.fyi/
+featured: true
 ---
 
 ## Some other stuff about Tome

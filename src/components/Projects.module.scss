@@ -1,0 +1,41 @@
+.projects {
+  background-color: whitesmoke;
+
+  a { // better class naming here?
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    @media screen and (min-width: 40em) { // 640
+      width: 48%;
+    }
+    @media screen and (min-width: 64em) { // 1024
+      width: 31%;
+    }
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-family: 'Source Sans Pro', Sans-Serif;
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 2rem;
+    color: black;
+  }
+
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // Force left alignment for uneven last row.
+  &:after {
+    content: '';
+    @media screen and (min-width: 40em) { // 640
+      width: 48%;
+    }
+    @media screen and (min-width: 64em) { // 1024
+      width: 31%;
+    }
+  }
+}

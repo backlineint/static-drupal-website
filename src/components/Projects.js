@@ -9,12 +9,9 @@ import styles from "./Projects.module.scss"
 export default () => (
   <StaticQuery
     query={graphql`
-      query FeaturedProjectsQuery {
+      query ProjectsQuery {
         allMarkdownRemark(
           filter: {
-            frontmatter: {
-              featured: {eq: true}
-            },
             fields: {
               type: {eq: "project"}
             }
@@ -38,7 +35,7 @@ export default () => (
     render={data => (
       <div className={styles.projects}>
         <Constrain>
-          <h2>Featured Projects</h2>
+          <h2>All Projects</h2>
           <div className={styles.grid}>
             {data.allMarkdownRemark.edges.map(({node}) => (
               <ProjectCard 

@@ -1,0 +1,32 @@
+.project-card {
+  box-shadow: 0px 0px 2px 1px rgba(25,17,34,0.1);
+  background-color: white;
+  padding: 2rem;
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0px 0px 2px 1px rgba(6, 120, 190, 0.3);
+  }
+
+  .title {
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 30px;
+  }
+
+  .language {
+    color: #31373f;
+    font-size: 14px;
+  }
+
+  .description {
+    color: #31373f;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}

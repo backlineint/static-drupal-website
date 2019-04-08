@@ -2,18 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import FeaturedProjects from "../components/FeaturedProjects"
-import Hero from "../components/Hero"
-import Constrain from "../components/Constrain"
+import Projects from "../components/Projects"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-    <Hero />
-    <FeaturedProjects />
-    <Constrain>
-      <h2>Why static?</h2>
-    </Constrain>
+    <Projects />
   </Layout>
 )
 

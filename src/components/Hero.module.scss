@@ -3,8 +3,10 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 4fr 8fr;
     grid-gap: 4rem;
+    @media screen and (min-width: 40em) { // 640
+      grid-template-columns: 4fr 8fr;
+    }
   }
 
   h1,
