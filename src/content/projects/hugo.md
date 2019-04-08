@@ -3,6 +3,7 @@ title: Hugo
 description: The world’s fastest framework for building websites
 repository: https://github.com/gohugoio/hugo
 homepage: https://gohugo.io/
+language: Go
 ---
 
 ## Overview

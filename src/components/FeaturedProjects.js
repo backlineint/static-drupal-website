@@ -50,14 +50,14 @@ export default () => (
               />
             ))}
             <ProjectCard 
-              link="/resources/contributing"
-              title="Add New"
-              description="Add a new project."
-            />
-            <ProjectCard 
               link="/projects"
               title="View All"
               description="See all projects."
+            />
+            <ProjectCard 
+              link="/resources/contributing"
+              title="Add New"
+              description="Add a new project."
             />
           </div>
         </Constrain>
