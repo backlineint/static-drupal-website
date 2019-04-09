@@ -11,5 +11,5 @@ featured: true
 
 Tons of cool text
 
-https://www.hikewithgravity.com/
-http://badzilla.co.uk/
+* https://www.hikewithgravity.com/
+* http://badzilla.co.uk/
