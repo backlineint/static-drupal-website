@@ -14,7 +14,7 @@ export default () => (
           filter: {
             frontmatter: {
               featured: {eq: true}
-            },
+            }
             fields: {
               type: {eq: "project"}
             }

@@ -16,10 +16,16 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     if (fileNode.sourceInstanceName === 'projects') {
       // It should be possible to put files in the root of the projects directory, or in a subdirectory.
       const slug = createFilePath({ node, getNode, basePath: `${fileNode.relativeDirectory}` })
+      const fileName = slug.replace(/\//g, '')
       createNodeField({
         node,
         name: `slug`,
         value: `/projects${slug}`,
+      })
+      createNodeField({
+        node,
+        name: `editPath`,
+        value: `https://github.com/backlineint/static-drupal-website/edit/master/src/content/projects/${fileName}.md`,
       })
       createNodeField({
         node,

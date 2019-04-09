@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Constrain from "./Constrain"
 import ProjectCard from "./ProjectCard"
+import ProjectCardExternal from "./ProjectCardExternal"
 
 import styles from "./Projects.module.scss"
 
@@ -15,7 +16,11 @@ export default () => (
             fields: {
               type: {eq: "project"}
             }
-          },
+          }
+          sort: {
+            fields: [frontmatter___title]
+            order: ASC
+          }
         ) {
           edges {
             node {
@@ -46,15 +51,10 @@ export default () => (
                 description={node.frontmatter.description}
               />
             ))}
-            <ProjectCard 
-              link="/resources/contributing"
-              title="Add New"
-              description="Add a new project."
-            />
-            <ProjectCard 
-              link="/projects"
-              title="View All"
-              description="See all projects."
+            <ProjectCardExternal
+              link="https://github.com/backlineint/static-drupal-website/edit/master/src/content/projects/project-template.md.example"
+              title="Add A New Project"
+              description="Have something that you want to share? Add a new project"
             />
           </div>
         </Constrain>
