@@ -4,6 +4,10 @@
 .list {
   padding: 0;
   float: right;
+  display: none;
+  @media screen and (min-width: 64em) {
+    display: inline;
+  }
   a {
     color: white;
     text-decoration: none;

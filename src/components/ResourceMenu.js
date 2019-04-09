@@ -1,44 +1,30 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 import styles from "./ResourceMenu.module.scss"
 
 export default () => (
-  <StaticQuery
-    query={graphql`
-      query ResourceMenuQuery {
-        allMarkdownRemark(
-          filter: {
-            fields: {type: {eq: "resource"}}
-          }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                title
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <ul className={styles.list}>
-          {data.allMarkdownRemark.edges.map(({node}) => (
-            <Link
-              to={node.fields.slug}
-              className={styles.link}
-              key={node.fields.slug}
-            >
-              <li>{node.frontmatter.title}</li>
-            </Link>
-          ))}
-        </ul>
-      </>
-    )}
-  />
+
+  <>
+    <ul className={styles.list}>
+      <Link
+        to="/projects"
+        className={styles.link}
+      >
+        <li>Projects</li>
+      </Link>
+      <Link
+        to="/resources"
+        className={styles.link}
+      >
+        <li>Resources</li>
+      </Link>
+      <Link
+        to="/contributing"
+        className={styles.link}
+      >
+        <li>Contributing</li>
+      </Link>
+    </ul>
+  </>
 )

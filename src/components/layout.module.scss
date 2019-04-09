@@ -1,5 +1,4 @@
 .footer {
-  //background: #0678be;
   background-color: #064771;
   color: white;
   padding-top: 1.5rem;
@@ -9,6 +8,11 @@
 }
 
 .fixed {
+  display: none;
+  @media screen and (min-width: 64em) {
+    display: inline;
+  }
+
   svg {
     position: fixed !important;
   }
