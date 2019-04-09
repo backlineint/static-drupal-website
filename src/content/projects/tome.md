@@ -10,3 +10,6 @@ featured: true
 ## Some other stuff about Tome
 
 Tons of cool text
+
+https://www.hikewithgravity.com/
+http://badzilla.co.uk/

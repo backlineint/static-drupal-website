@@ -11,6 +11,9 @@
   display: none;
   @media screen and (min-width: 64em) {
     display: inline;
+    svg {
+      z-index: 1000;
+    }
   }
 
   svg {

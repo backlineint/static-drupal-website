@@ -4,7 +4,7 @@
   .grid {
     display: grid;
     grid-gap: 4rem;
-    @media screen and (min-width: 40em) { // 640
+    @media screen and (min-width: 40em) {
       grid-template-columns: 4fr 8fr;
     }
   }
@@ -19,9 +19,42 @@
     margin: 0;
     padding-top: 2rem;
   }
+
+  a {
+    color: white;
+  }
+
+  .aside {
+    order: 2;
+    @media screen and (min-width: 40em) {
+      order: 0;
+    }
+  }
   
   .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
     font-size: 8rem;
     color: white;
+    .drupal {
+      position: relative;
+      top: 1.5rem;
+      @media screen and (min-width: 40em) {
+        top: .5rem;
+      }
+      @media screen and (min-width: 64em) {
+        top: 1.5rem;
+      }
+    }
+  }
+
+  .star {
+    margin-right: 1rem;
+  }
+
+  .callout {
+    font-size: 14px;
+    font-style: italic;
   }
 }

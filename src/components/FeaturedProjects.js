@@ -52,12 +52,7 @@ export default () => (
             <ProjectCard 
               link="/projects"
               title="View All"
-              description="See all projects."
-            />
-            <ProjectCard 
-              link="/resources/contributing"
-              title="Add New"
-              description="Add a new project."
+              description="See all projects listed on the site or add something new"
             />
           </div>
         </Constrain>
