@@ -1,23 +1,22 @@
 ---
 title: Title
-description: A framework based on React that helps developers build blazing fast websites and apps
-repository: https://github.com/gatsbyjs/gatsby
-homepage: https://www.gatsbyjs.org/
+description: Description used on list pages.
+homepage: https://mystaticproject.com
+repository: https://github.com/org/mystaticproject
 language: JavaScript
-featured: true
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Introductory Paragraph. Save this file as 'src/content/projects/project-name.md' and it will be incorporated in the build.
 
 ## Using with Drupal
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+* A description of ways that this tool can be used with data from Drupal.
 
 ## Resources
 
-https://gatsbyguides.com/
+* [A blog post about using this project with Drupal](https://exampleresourcelink.com/) - feel free to also add a descriptin.
 
-## Sites
+## Sites Using Drupal
 
-https://preston.so/
+* https://myprojectsite.com/
 
